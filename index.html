@@ -35,7 +35,7 @@
 
         <!-- mobile menu -->
         <ul
-          class="menu-mobile hidden md:hidden fixed bg-blue-300 w-1/5 h-full top-0 right-0 font-roboto font-medium text-[10px] text-center leading-6 py-1 transition-all ease-in duration-500"
+          class="menu-mobile hidden md:hidden fixed bg-blue-300 w-1/5 h-full top-0 right-0 font-roboto font-medium text-[10px] text-center leading-6 py-1 transition-all ease-in duration-500 z-50"
         >
           <li><a href="#">Ưu đãi</a></li>
           <li><a href="#">Dịnh vụ</a></li>
@@ -65,7 +65,7 @@
           </svg>
         </button>
         <button
-          class="hidden md:flex bg-gradient-to-b from-[#FFB469] to-[#E57709] shadow-[0_8px_16px_rgba(229,119,9,.35)] md:pr-2 lg:pr-3 xl:pr-6 xxxl:pr-8 md:pl-2 lg:pl-3 xl:pl-4 xxxl:pl-6 md:py-1 lg:py-2 xl:py-3 xxl:py-4 rounded-full items-center text-white justify-between"
+          class="hidden md:flex bg-gradient-to-b from-[#FFB469] to-[#E57709] shadow-[0_8px_16px_rgba(229,119,9,.35)] hover:opacity-90 md:pr-2 lg:pr-3 xl:pr-6 xxxl:pr-8 md:pl-2 lg:pl-3 xl:pl-4 xxxl:pl-6 md:py-1 lg:py-2 xl:py-3 xxl:py-4 rounded-full items-center text-white justify-between"
         >
           <div>
             <img src="./img/Group.svg" />
@@ -301,7 +301,7 @@
           </div>
         </div>
         <button
-          class="flex bg-gradient-to-b from-[#FFB469] to-[#E57709] shadow-[0_8px_16px_rgba(229,119,9,.35)] xxxl: px-10 xl:px-8 xxxl:py-4 xl:py-3 xl:mt-10 xxxl:mt-11 rounded-full items-center text-white justify-between font-roboto font-semibold text-sm"
+          class="flex bg-gradient-to-b from-[#FFB469] to-[#E57709] shadow-[0_8px_16px_rgba(229,119,9,.35)] hover:opacity-90 xxxl: px-10 xl:px-8 xxxl:py-4 xl:py-3 xl:mt-10 xxxl:mt-11 rounded-full items-center text-white justify-between font-roboto font-semibold text-sm"
         >
           Liên hệ
         </button>
@@ -331,223 +331,229 @@
           </div>
         </div>
         <!-- table -->
+
         <table
-          class="w-full border-collapse border border-solid border-[#EBEBEB] font-roboto font-normal xl:text-sm xxxl:text-lg mobile:text-xs text-black-rgba tracking-wide"
+          class="w-full font-roboto font-normal xl:text-sm xxxl:text-lg mobile:text-xs text-black-rgba tracking-wide"
         >
-          <tr
-            class="border border-solid border-[#EBEBEB] bg-gradient-to-r from-[#50C577] [#50C577] to-[#2DBEFC] font-roboto font-medium text-sm text-white"
-          >
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB]"
-              rowspan="2"
+          <!-- <tbody class="block overflow-y-scroll xl:h-[450px] w-full"> -->
+          <thead>
+            <tr
+              class="border border-solid border-[#EBEBEB] bg-gradient-to-r from-[#50C577] [#50C577] to-[#2DBEFC] font-roboto font-medium text-sm text-white"
             >
-              STT
-            </th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB]"
-              rowspan="2"
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB]"
+                rowspan="2"
+              >
+                STT
+              </th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB]"
+                rowspan="2"
+              >
+                TÊN DỊCH VỤ
+              </th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB]"
+                colspan="2"
+              >
+                GIÁ DỊCH VỤ DÀNH CHO KHÁCH HÀNG CÓ QUỐC TỊCH
+              </th>
+            </tr>
+            <tr
+              class="border border-solid border-[#EBEBEB] bg-gradient-to-r from-[#50C577] [#50C577] to-[#2DBEFC] font-roboto font-medium text-sm text-white"
             >
-              TÊN DỊCH VỤ
-            </th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB]"
-              colspan="2"
-            >
-              GIÁ DỊCH VỤ DÀNH CHO KHÁCH HÀNG CÓ QUỐC TỊCH
-            </th>
-          </tr>
-          <tr
-            class="border border-solid border-[#EBEBEB] bg-gradient-to-r from-[#50C577] [#50C577] to-[#2DBEFC] font-roboto font-medium text-sm text-white"
-          >
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              Việt Nam
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              Nước ngoài
-            </th>
-          </tr>
-          <tr class="border border-solid border-[#EBEBEB] font-normal">
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">1</th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
-            >
-              Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              200,000/giờ
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              400,000/giờ
-            </th>
-          </tr>
-          <tr class="border border-solid border-[#EBEBEB]">
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">2</th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
-            >
-              Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              200,000/giờ
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              400,000/giờ
-            </th>
-          </tr>
-          <tr class="border border-solid border-[#EBEBEB]">
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">3</th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
-            >
-              Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              200,000/giờ
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              400,000/giờ
-            </th>
-          </tr>
-          <tr class="border border-solid border-[#EBEBEB]">
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">4</th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
-            >
-              Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              200,000/giờ
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              400,000/giờ
-            </th>
-          </tr>
-          <tr class="border border-solid border-[#EBEBEB]">
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">5</th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
-            >
-              Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              200,000/giờ
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              400,000/giờ
-            </th>
-          </tr>
-          <tr class="border border-solid border-[#EBEBEB]">
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">6</th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
-            >
-              Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              200,000/giờ
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              400,000/giờ
-            </th>
-          </tr>
-          <tr class="border border-solid border-[#EBEBEB]">
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">7</th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
-            >
-              Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              200,000/giờ
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              400,000/giờ
-            </th>
-          </tr>
-          <tr>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">8</th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
-            >
-              Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
-            </th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB]"
-              colspan="2"
-            >
-              Theo giá niêm yết tại BVĐK Phương Đông
-            </th>
-          </tr>
-          <tr class="border border-solid px-3 py-2 border-[#EBEBEB]">
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">9</th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
-            >
-              Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              200,000/giờ
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              400,000/giờ
-            </th>
-          </tr>
-          <tr class="border border-solid px-3 py-2 border-[#EBEBEB]">
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">10</th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
-            >
-              Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              200,000/giờ
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              400,000/giờ
-            </th>
-          </tr>
-          <tr class="border border-solid px-3 py-2 border-[#EBEBEB]">
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">11</th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
-            >
-              Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              200,000/giờ
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              400,000/giờ
-            </th>
-          </tr>
-          <tr class="border border-solid px-3 py-2 border-[#EBEBEB]">
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">12</th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
-            >
-              Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              200,000/giờ
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              400,000/giờ
-            </th>
-          </tr>
-          <tr class="border border-solid px-3 py-2 border-[#EBEBEB]">
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">13</th>
-            <th
-              class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
-            >
-              Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              200,000/giờ
-            </th>
-            <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
-              400,000/giờ
-            </th>
-          </tr>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                Việt Nam
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                Nước ngoài
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border border-solid border-[#EBEBEB] font-normal">
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">1</th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
+              >
+                Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                200,000/giờ
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                400,000/giờ
+              </th>
+            </tr>
+            <tr class="border border-solid border-[#EBEBEB]">
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">2</th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
+              >
+                Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                200,000/giờ
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                400,000/giờ
+              </th>
+            </tr>
+            <tr class="border border-solid border-[#EBEBEB]">
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">3</th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
+              >
+                Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                200,000/giờ
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                400,000/giờ
+              </th>
+            </tr>
+            <tr class="border border-solid border-[#EBEBEB]">
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">4</th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
+              >
+                Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                200,000/giờ
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                400,000/giờ
+              </th>
+            </tr>
+            <tr class="border border-solid border-[#EBEBEB]">
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">5</th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
+              >
+                Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                200,000/giờ
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                400,000/giờ
+              </th>
+            </tr>
+            <tr class="border border-solid border-[#EBEBEB]">
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">6</th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
+              >
+                Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                200,000/giờ
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                400,000/giờ
+              </th>
+            </tr>
+            <tr class="border border-solid border-[#EBEBEB]">
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">7</th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
+              >
+                Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                200,000/giờ
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                400,000/giờ
+              </th>
+            </tr>
+            <tr>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">8</th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
+              >
+                Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+              </th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB]"
+                colspan="2"
+              >
+                Theo giá niêm yết tại BVĐK Phương Đông
+              </th>
+            </tr>
+            <tr class="border border-solid px-3 py-2 border-[#EBEBEB]">
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">9</th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
+              >
+                Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                200,000/giờ
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                400,000/giờ
+              </th>
+            </tr>
+            <tr class="border border-solid px-3 py-2 border-[#EBEBEB]">
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">10</th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
+              >
+                Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                200,000/giờ
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                400,000/giờ
+              </th>
+            </tr>
+            <tr class="border border-solid px-3 py-2 border-[#EBEBEB]">
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">11</th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
+              >
+                Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                200,000/giờ
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                400,000/giờ
+              </th>
+            </tr>
+            <tr class="border border-solid px-3 py-2 border-[#EBEBEB]">
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">12</th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
+              >
+                Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                200,000/giờ
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                400,000/giờ
+              </th>
+            </tr>
+            <tr class="border border-solid px-3 py-2 border-[#EBEBEB]">
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">13</th>
+              <th
+                class="border border-solid px-3 py-2 border-[#EBEBEB] text-left"
+              >
+                Chăm sóc điều dưỡng tại nhà - Bệnh nhân nặng
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                200,000/giờ
+              </th>
+              <th class="border border-solid px-3 py-2 border-[#EBEBEB]">
+                400,000/giờ
+              </th>
+            </tr>
+          </tbody>
         </table>
         <div
           class="flex bg-gradient-to-r from-[#50C577] [#50C577] to-[#2DBEFC] mx-[-20px] py-4 justify-center"
@@ -592,7 +598,7 @@
           gestas metus
         </p>
         <button
-          class="flex bg-gradient-to-b from-[#FFB469] to-[#E57709] shadow-[0_8px_16px_rgba(229,119,9,.35)] px-8 py-3 mt-10 rounded-full items-center text-white justify-between font-roboto font-semibold text-sm"
+          class="flex bg-gradient-to-b from-[#FFB469] to-[#E57709] shadow-[0_8px_16px_rgba(229,119,9,.35)] hover:opacity-90 px-8 py-3 mt-10 rounded-full items-center text-white justify-between font-roboto font-semibold text-sm"
         >
           Đăng ký tư vấn
         </button>
@@ -639,7 +645,7 @@
           Đội ngũ bác sĩ bệnh viện đa khoa Phương Đông
         </p>
         <button
-          class="lg:flex mobile:hidden bg-gradient-to-b from-[#FFB469] to-[#E57709] shadow-[0_8px_16px_rgba(229,119,9,.35)] px-8 py-3 rounded-full items-center text-white justify-between"
+          class="lg:flex mobile:hidden bg-gradient-to-b from-[#FFB469] to-[#E57709] shadow-[0_8px_16px_rgba(229,119,9,.35)] hover:opacity-90 px-8 py-3 rounded-full items-center text-white justify-between"
         >
           <div>
             <img src="./img/LoGoBacSi.svg" />
@@ -650,7 +656,7 @@
         </button>
       </div>
       <div class="container lg:flex mobile:block flex-wrap">
-        <div class="flex lg:w-[49%] mobile:w-full mr-auto">
+        <div class="flex lg:w-[49%] mobile:w-full mr-auto hover:scale-105">
           <div class="pic-doctor w-1/2 xl:mr-5">
             <img src="./img/Group 9643.svg" alt="bac si" />
           </div>
@@ -673,7 +679,7 @@
             </div>
           </div>
         </div>
-        <div class="flex lg:w-[49%] mobile:w-full">
+        <div class="flex lg:w-[49%] mobile:w-full hover:scale-105">
           <div class="pic-doctor w-1/2 xl:mr-5">
             <img src="./img/Group 9644.svg" alt="bac si" />
           </div>
@@ -697,7 +703,7 @@
             </div>
           </div>
         </div>
-        <div class="flex lg:w-[49%] mobile:w-fullmr-auto">
+        <div class="flex lg:w-[49%] mobile:w-fullmr-auto hover:scale-105">
           <div class="w-1/2 my-auto font-roboto leading-normal">
             <p class="font-medium xl:text-xl xl:mb-1">BS: TRẦN KINH TRANG</p>
             <p class="font-normal xl:text-xs xl:mb-3 text-[#888888]">
@@ -721,7 +727,7 @@
             <img src="./img/Group 9645.svg" alt="bac si" />
           </div>
         </div>
-        <div class="flex lg:w-[49%] mobile:w-full">
+        <div class="flex lg:w-[49%] mobile:w-full hover:scale-105">
           <div class="w-1/2 my-auto font-roboto leading-normal">
             <p class="font-medium xl:text-xl xl:mb-1">DS: NGUYỄN THỊ KIM YẾN</p>
             <p class="font-normal xl:text-xs xl:mb-3 text-[#888888]">
@@ -824,9 +830,13 @@
       <div
         class="bg-no-repeat bg-cover bg-center bg-circle w-[600px] h-[600px] bottom-[-40%] left-[35%] absolute"
       ></div>
-      <div class="lg:w-[49%] mobile:w-full mr-auto">
-        <img src="./img/Rectangle 6467.svg" />
-      </div>
+      <a
+        href="https://www.youtube.com"
+        target="_blank"
+        class="lg:w-[49%] mobile:w-full mr-auto hover:brightness-110"
+      >
+        <img src="./img/yt.png" />
+      </a>
       <div class="lg:w-[49%] mobile:w-full my-auto">
         <p class="font-medium xl:text-2xl mobile:text-base leading-tight mb-5">
           Giải pháp an toàn hãy lựa chọn dịch vụ thai sản trọn gói tại bệnh viện
@@ -841,7 +851,7 @@
           dolor lorem aenean quis. Ridiculus mattis.
         </p>
         <button
-          class="lg:flex mobile:hidden bg-gradient-to-b from-[#FFB469] to-[#E57709] shadow-[0_8px_16px_rgba(229,119,9,.35)] pr-6 pl-4 py-3 rounded-full items-center text-white justify-between"
+          class="lg:flex mobile:hidden bg-gradient-to-b from-[#FFB469] to-[#E57709] shadow-[0_8px_16px_rgba(229,119,9,.35)] hover:opacity-90 pr-6 pl-4 py-3 rounded-full items-center text-white justify-between"
         >
           <div>
             <img src="./img/Group.svg" />
@@ -867,7 +877,7 @@
           risus
         </p>
         <p class="font-medium xl:text-sm leading-normal mb-1">
-          Chăm sóc thai kỳ cùng bác sĩ Sản khoa hàng đầuKhám định kỳ với Bác sĩ
+          Chăm sóc thai kỳ cùng bác sĩ Sản khoa hàng đầu Khám định kỳ với Bác sĩ
           sản khoa.
         </p>
         <p
@@ -895,7 +905,7 @@
           risus
         </p>
         <button
-          class="flex bg-gradient-to-b from-[#FFB469] to-[#E57709] shadow-[0_8px_16px_rgba(229,119,9,.35)] pr-6 pl-4 py-3 rounded-full items-center text-white justify-between mt-8"
+          class="flex bg-gradient-to-b from-[#FFB469] to-[#E57709] shadow-[0_8px_16px_rgba(229,119,9,.35)] hover:opacity-90 pr-6 pl-4 py-3 rounded-full items-center text-white justify-between mt-8"
         >
           <div>
             <img src="./img/Group.svg" />
@@ -1088,6 +1098,7 @@
             src="./img/thong-bao-website-voi-bo-cong-thuong_grande_waifu2x_photo_noise3_scale_tta_1 1.svg"
           />
         </div>
+        <!-- j -->
       </div>
     </footer>
     <div
