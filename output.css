@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Roboto:wght@500&display=swap');
+
 /*
 ! tailwindcss v3.2.0 | MIT License | https://tailwindcss.com
 */
@@ -669,8 +671,12 @@ video {
   left: 40%;
 }
 
-.right-\[10\%\]{
-  right: 10%;
+.top-1\/2{
+  top: 50%;
+}
+
+.right-52{
+  right: 13rem;
 }
 
 .bottom-\[-40\%\]{
@@ -681,8 +687,20 @@ video {
   left: 35%;
 }
 
+.top-1{
+  top: 0.25rem;
+}
+
 .z-50{
   z-index: 50;
+}
+
+.z-10{
+  z-index: 10;
+}
+
+.z-20{
+  z-index: 20;
 }
 
 .float-left{
@@ -702,10 +720,6 @@ video {
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
-}
-
-.mt-\[68px\]{
-  margin-top: 68px;
 }
 
 .mb-4{
@@ -846,6 +860,10 @@ video {
   height: max-content;
 }
 
+.h-\[550px\]{
+  height: 550px;
+}
+
 .h-1\/2{
   height: 50%;
 }
@@ -958,6 +976,10 @@ video {
   width: 10rem;
 }
 
+.w-\[20px\]{
+  width: 20px;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -972,6 +994,31 @@ video {
 
 .border-collapse{
   border-collapse: collapse;
+}
+
+.translate-y-\[-50\%\]{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[-50\%\]{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[-30\%\]{
+  --tw-translate-y: -30%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[10\%\]{
+  --tw-translate-x: 10%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-0{
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform{
@@ -1256,6 +1303,11 @@ video {
   padding-right: 6rem;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pl-2{
   padding-left: 0.5rem;
 }
@@ -1328,6 +1380,14 @@ video {
   padding-top: 6rem;
 }
 
+.pb-8{
+  padding-bottom: 2rem;
+}
+
+.pt-2{
+  padding-top: 0.5rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -1338,6 +1398,10 @@ video {
 
 .font-roboto{
   font-family: Roboto;
+}
+
+.font-am{
+  font-family: Arima Madurai;
 }
 
 .text-\[10px\]{
@@ -1562,6 +1626,19 @@ video {
     width: 50%;
   }
 
+  .mobile\:w-1\/6{
+    width: 16.666667%;
+  }
+
+  .mobile\:w-5\/12{
+    width: 41.666667%;
+  }
+
+  .mobile\:translate-x-\[10\%\]{
+    --tw-translate-x: 10%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .mobile\:px-0{
     padding-left: 0px;
     padding-right: 0px;
@@ -1570,6 +1647,19 @@ video {
   .mobile\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .mobile\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .mobile\:pt-2{
+    padding-top: 0.5rem;
+  }
+
+  .mobile\:pb-2{
+    padding-bottom: 0.5rem;
   }
 
   .mobile\:text-center{
@@ -1688,6 +1778,11 @@ video {
 
   .lg\:w-1\/4{
     width: 25%;
+  }
+
+  .lg\:translate-x-0{
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:bg-circle{
@@ -1822,8 +1917,8 @@ video {
     width: 28%;
   }
 
-  .xl\:w-5\/12{
-    width: 41.666667%;
+  .xl\:w-1\/2{
+    width: 50%;
   }
 
   .xl\:w-\[29\%\]{
@@ -1935,11 +2030,6 @@ video {
   .xl\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .xl\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .xl\:text-xl{
