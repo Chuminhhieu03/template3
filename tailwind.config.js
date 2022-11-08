@@ -23,6 +23,7 @@ module.exports = {
     },
     fontFamily: {
       roboto: ["Roboto"],
+      am: ["Arima Madurai"],
     },
   },
   plugins: [],
